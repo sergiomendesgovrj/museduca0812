@@ -305,6 +305,15 @@ footer p{max-width:90ch;margin:0 0 8px}
 .lb img{max-width:100%;max-height:82vh;border-radius:10px;background:#fff}
 .lb p{color:#C9D4E6;font-size:13px;margin:0;text-align:center}
 .lb button{position:absolute;top:16px;right:20px;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:10px;width:40px;height:40px;font-size:20px;cursor:pointer}
+.lst{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:14px}
+.lst li{margin:5px 0}
+table.team-t{border:none}
+table.team-t td{font-size:13.5px}
+table.team-t td:nth-child(2){color:var(--ink);font-weight:500;white-space:normal}
+table.team-t td.money{color:var(--navy);font-weight:600;white-space:nowrap}
+table.team-t td.money small{display:block;font-weight:400;color:var(--faint);font-size:11px}
+table.t tr.hl td{background:var(--gold-soft) !important}
+#visao .front:not(.star){background:#fff}
 @media print{nav,.stripes,.toggle-all{display:none}details.plus>.body{display:block}section{break-inside:avoid-page}}
 </style>
 </head>
@@ -324,7 +333,7 @@ footer p{max-width:90ch;margin:0 0 8px}
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO · slide 1 -->
 <header class="hero" id="topo">
   <div class="wrap">
     <div class="partners">
@@ -341,52 +350,173 @@ footer p{max-width:90ch;margin:0 0 8px}
       </div>
       <div class="date-card">
         <div class="d">08 DEZ<small>2026 · inauguração oficial confirmada</small></div>
-        <p>A partir dela, ativação progressiva de dezembro de 2026 a abril de 2027, com síntese em maio de 2027.</p>
+        <p>A partir dela, uma ativação progressiva de dezembro de 2026 a abril de 2027.</p>
       </div>
-    </div>
-
-    <div class="fronts" id="visao">
-      <a class="front star" href="#educativo" style="--c:var(--gold)">
-        <span class="n">01</span><span class="badge">DESTAQUE</span>
-        <h3>Projeto educativo</h3>
-        <p>Concepção pedagógica, percursos, mediação, Passaporte para o Futuro, formação e programação.</p>
-        <div class="who2">IDG</div>
-      </a>
-      <a class="front" href="#operacao" style="--c:var(--teal)">
-        <span class="n">02</span>
-        <h3>Estrutura e operação</h3>
-        <p>Equipes, funcionamento, orçamento, responsabilidades, cronograma e avaliação.</p>
-        <div class="who2">OEI / SEDUC-RS</div>
-      </a>
-      <a class="front" href="#comite" style="--c:var(--mag)">
-        <span class="n">03</span>
-        <h3>Comitê Jovem</h3>
-        <p>Proposta de constituição participativa e pactuação institucional.</p>
-        <div class="who2">SEDUC-RS / OEI</div>
-      </a>
     </div>
   </div>
 </header>
 
-<!-- ===================== 01 EDUCATIVO ===================== -->
+<!-- slides 2 e 3 -->
+<section id="visao" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:22px">
+      <h2>A experiência de pré-inauguração em três frentes</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card accent c-gold"><h4>Projeto educativo</h4><p>Concepção pedagógica e instrumentos desenvolvidos pelo IDG.</p></div>
+      <div class="card accent c-teal"><h4>Operação educativa</h4><p>Equipes, agendamentos, mediação, serviços de apoio e avaliação, sob condução da OEI.</p></div>
+      <div class="card accent c-mag"><h4>Comitê Jovem</h4><p>Proposta de governança participativa a construir com estudantes, SEDUC-RS e OEI.</p></div>
+    </div>
+    <p class="note">Fonte: Nota Técnica nº 170/2026/OEI-BR (06/11/2026) e apresentação do Comitê Jovem (novembro/2026).</p>
+
+    <div class="block">
+      <div class="block-title"><h3>Estrutura da apresentação</h3><span class="rule"></span></div>
+      <div class="fronts" style="margin-top:0">
+        <a class="front star" href="#educativo" style="--c:var(--gold)">
+          <span class="n">01</span><span class="badge">DESTAQUE</span>
+          <h3>Projeto educativo</h3>
+          <p>Concepção pedagógica, percursos, mediação, Passaporte Virtual, formação e programação.</p>
+          <div class="who2">IDG</div>
+        </a>
+        <a class="front" href="#operacao" style="--c:var(--teal)">
+          <span class="n">02</span>
+          <h3>Estrutura e operação</h3>
+          <p>Equipes, funcionamento, orçamento, responsabilidades, cronograma e avaliação.</p>
+          <div class="who2">OEI / SEDUC-RS</div>
+        </a>
+        <a class="front" href="#comite" style="--c:var(--mag)">
+          <span class="n">03</span>
+          <h3>Comitê Jovem</h3>
+          <p>Proposta de constituição participativa e pactuação institucional.</p>
+          <div class="who2">SEDUC-RS / OEI</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 01 EDUCATIVO · slides 4–11 ===================== -->
 <section id="educativo" class="dark">
   <div class="wrap">
-    <div class="chap" style="--c:var(--gold)"><span class="num" style="color:var(--navy)">01</span><span class="lbl">Capítulo 01 · IDG · Produto 19</span></div>
+    <div class="chap" style="--c:var(--gold)"><span class="num" style="color:var(--navy)">01</span><span class="lbl">Capítulo 01 · IDG</span></div>
     <div class="highlight-pill">★ Como o educativo funciona no museu</div>
     <div class="sec-head">
-      <h2>Projeto educativo da exposição Sala de Aula</h2>
-      <p class="lede">A primeira experiência pública do MusEduca acontece dentro do Instituto de Educação General Flores da Cunha, uma escola em funcionamento. A Sala de Aula, ambientada nos anos 1930 (a década em que o prédio foi construído), é o ponto de partida para investigar como a educação mudou e para pensar o que se quer para o amanhã.</p>
+      <h2>Projeto educativo da exposição</h2>
+      <p class="lede">Concepção pedagógica; referências temáticas; públicos; visitas mediadas; atividades; Passaporte para o Futuro.</p>
     </div>
 
     <div class="stats">
       <div class="stat" style="--c:var(--gold)"><div class="v">40 min</div><div class="k">Percurso principal, até 20 participantes por educador</div></div>
-      <div class="stat" style="--c:var(--teal)"><div class="v">8</div><div class="k">Atividades educativas, acionadas conforme o público</div></div>
-      <div class="stat" style="--c:#E79BE3"><div class="v">4</div><div class="k">Perfis de público com abordagens próprias</div></div>
-      <div class="stat" style="--c:var(--gold)"><div class="v">36 h</div><div class="k">Formação da equipe em 9 encontros, com evento-teste</div></div>
-      <div class="stat" style="--c:var(--teal)"><div class="v">11</div><div class="k">Instrumentos de registro e avaliação (Anexos A–K)</div></div>
+      <div class="stat" style="--c:var(--teal)"><div class="v">25 min</div><div class="k">Percurso para crianças e grupos familiares</div></div>
+      <div class="stat" style="--c:#E79BE3"><div class="v">4</div><div class="k">Referências temáticas</div></div>
+      <div class="stat" style="--c:var(--gold)"><div class="v">4</div><div class="k">Perfis de público com abordagens próprias</div></div>
+      <div class="stat" style="--c:var(--teal)"><div class="v">8</div><div class="k">Atividades educativas</div></div>
     </div>
 
-    <!-- O ESPAÇO -->
+    <!-- slide 5 -->
+    <div class="block">
+      <div class="block-title"><h3>Concepção pedagógica</h3><span class="rule"></span></div>
+      <div class="dcard bar" style="--c:var(--gold);margin-bottom:16px">
+        <div class="meta">PAULO FREIRE</div>
+        <p style="font-size:15.5px;color:#E3EAF5">Uma das principais referências é Paulo Freire, particularmente nas relações entre diálogo, experiência, conhecimento e transformação social. Os conhecimentos e experiências dos alunos são fundamentais para a construção da aprendizagem.</p>
+        <details class="plus"><summary>No MusEduca</summary><div class="body"><p>Essa orientação fundamenta uma mediação que considera os repertórios dos visitantes e os coloca em diálogo com os conteúdos históricos, os objetos e as questões apresentados pela exposição.</p></div></details>
+      </div>
+      <div class="grid g3">
+        <div class="dcard bar" style="--c:var(--teal)"><h4>Memória escolar</h4><p>As lembranças de estudantes, professores e trabalhadores acrescentam perspectivas sobre práticas de ensino, brincadeiras, relações e acontecimentos.</p></div>
+        <div class="dcard bar" style="--c:#E79BE3"><h4>Acessibilidade atitudinal</h4><p>Barreiras atitudinais são comportamentos que prejudicam a participação das pessoas com deficiência em igualdade de condições e oportunidades.</p></div>
+        <div class="dcard bar" style="--c:var(--gold)"><h4>Práticas educativas</h4><p>Visitas mediadas e atividades promovem a observação, a investigação, a brincadeira, a experimentação, a criação e o compartilhamento de experiências.</p></div>
+      </div>
+    </div>
+
+    <!-- slide 6 -->
+    <div class="block">
+      <div class="block-title"><h3>Referências temáticas</h3><span class="tag">conectar o conteúdo expositivo às vivências dos visitantes</span><span class="rule"></span><button class="toggle-all" data-scope="refs">abrir tudo +</button></div>
+      <div class="grid g4" data-group="refs">
+        <div class="dcard"><div class="meta">01</div><h4>Leitura do Mundo, Leitura da Sala de Aula</h4>
+          <details class="plus"><summary>Saiba mais</summary><div class="body">Fundamenta a investigação da exposição e das relações entre patrimônio, conhecimento e experiências dos visitantes.</div></details></div>
+        <div class="dcard"><div class="meta">02</div><h4>Vozes e Silêncios da História</h4>
+          <details class="plus"><summary>Saiba mais</summary><div class="body">Oferece referências para examinar a presença de diferentes sujeitos nos documentos e testemunhos, assim como os processos de seleção e representação que participam da construção da memória institucional.</div></details></div>
+        <div class="dcard"><div class="meta">03</div><h4>Ciência, Vida e Sociedade</h4>
+          <details class="plus"><summary>Saiba mais</summary><div class="body">Aproxima as discussões sobre tecnologias, linguagens e produção de conhecimentos das questões contemporâneas da educação.</div></details></div>
+        <div class="dcard"><div class="meta">04</div><h4>Arte e Resistência</h4>
+          <details class="plus"><summary>Saiba mais</summary><div class="body">Contribui para experiências que envolvam expressão, criação e participação cultural, especialmente quando relacionadas às produções estudantis e às formas de atuação dos sujeitos na vida escolar.</div></details></div>
+      </div>
+    </div>
+
+    <!-- slide 7 -->
+    <div class="block">
+      <div class="block-title"><h3>Diferentes públicos</h3><span class="tag">abordagens atentas às especificidades de cada grupo</span><span class="rule"></span></div>
+      <div class="grid g4">
+        <div class="dcard"><h4>Visitantes espontâneos</h4><p>Prioridade: tornar o museu reconhecível, informar suas condições de funcionamento e despertar interesse por seus conteúdos.</p></div>
+        <div class="dcard"><h4>Professores e grupos escolares</h4><p>A visita apresenta as possibilidades de utilização pedagógica da exposição e os procedimentos de agendamento.</p></div>
+        <div class="dcard"><h4>Redes de ex-alunos e antigos docentes</h4><p>A aproximação valoriza a memória escolar e os encontros intergeracionais.</p></div>
+        <div class="dcard"><h4>Frequentadores do parque e vizinhos</h4><p>Privilegia a relação do MusEduca com o território e as oportunidades de participação em atividades culturais e educativas.</p></div>
+      </div>
+      <div class="dcard" style="margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div><div class="meta">FAIXAS ETÁRIAS · CRIANÇAS</div><p>Privilegiar objetos e usos.</p></div>
+        <div><div class="meta">ADOLESCENTES</div><p>Questões sobre participação e conhecimento.</p></div>
+        <div><div class="meta">ADULTOS E GRUPOS INTERGERACIONAIS</div><p>Relações entre memória pessoal, experiências coletivas e transformações da educação.</p></div>
+      </div>
+    </div>
+
+    <!-- slide 8 -->
+    <div class="block">
+      <div class="block-title"><h3>Visitas mediadas</h3><span class="rule"></span></div>
+      <p style="color:#C9D4E6;max-width:90ch;font-size:15px">Nos atendimentos gerais, a referência é o percurso <b style="color:#fff">Leitura do Mundo, Leitura da Sala de Aula</b>: 40 minutos e até 20 participantes por educador. Nos grupos agendados, a equipe identifica o número de participantes, a faixa etária, o responsável pelo acompanhamento e as condições de participação.</p>
+      <div class="grid g2">
+        <div class="dcard bar" style="--c:var(--gold)">
+          <div class="meta">40 MIN · ATÉ 20 PARTICIPANTES</div>
+          <h4>Adolescentes, adultos e grupos escolares</h4>
+          <p>Investigar como a materialidade, as imagens e as narrativas escolares comunicam diferentes concepções de educação, relacionando a história do Instituto às experiências dos visitantes.</p>
+          <details class="plus"><summary>Os três núcleos da visita</summary><div class="body"><ul><li>A escola como espaço material e social</li><li>A escola como experiência vivida, documentada e lembrada</li><li>A escola como lugar de produção e circulação de conhecimentos</li></ul></div></details>
+        </div>
+        <div class="dcard bar" style="--c:var(--teal)">
+          <div class="meta">25 MIN</div>
+          <h4>Crianças e grupos familiares</h4>
+          <p>Especialmente primeira infância e anos iniciais do Ensino Fundamental. Aproximar as crianças da história da escola pela descoberta, observação sensível e experimentação.</p>
+          <details class="plus"><summary>Intenção educativa</summary><div class="body"><p>Favorecer o diálogo entre diferentes gerações e a expressão de ideias sobre os espaços de aprendizagem. O percurso começa pela exploração visual da Sala de Aula, reconhecendo objetos familiares e identificando diferenças em relação aos ambientes escolares conhecidos.</p></div></details>
+        </div>
+      </div>
+    </div>
+
+    <!-- slides 9 e 10 -->
+    <div class="block">
+      <div class="block-title"><h3>Atividades</h3><span class="rule"></span><button class="toggle-all" data-scope="acts">abrir tudo +</button></div>
+      <div class="acts" data-group="acts">
+        <div class="act" style="--c:var(--mag)"><h4>Vozes e Silêncios da História</h4><p>Oficina de narrativa a partir de 3 fontes (2 fotos e 1 texto).</p></div>
+        <div class="act" style="--c:var(--teal)"><h4>Hora do Recreio</h4><p>Seis atividades a partir de brincadeiras tradicionais.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Atividades independentes, que também podem ser complementares (ex.: cinco-marias, elástico, bola de gude).</div></details></div>
+        <div class="act" style="--c:var(--gold)"><h4>Tangram</h4><p>Remete a Alquimia: conhecimento é transformação.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Área da exposição permanente que mostra como a articulação de diferentes conhecimentos leva a descobertas.</div></details></div>
+        <div class="act" style="--c:var(--navy)"><h4>O que faz de uma tecnologia, Tecnologia?</h4><p>Cartões com problemas sobre a erva-mate.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Os cartões permitem compreender quatro operações técnicas documentadas no processamento da erva-mate: coleta, sapeco, secagem e cancheamento.</div></details></div>
+        <div class="act" style="--c:var(--mag)"><h4>Cápsula dos Amanhãs: uma viagem ao futuro da educação</h4><p>Oficina coletiva sobre futuros prováveis e desejáveis.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Parte de dados sobre uma escola fictícia em 2026, apresenta um problema inesperado e remete a futuros prováveis e desejáveis.</div></details></div>
+        <div class="act" style="--c:var(--teal)"><h4>Imagens que ensinam: criando quadros parietais</h4><p>Os participantes produzem seus próprios quadros.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Ao produzir seus quadros, deparam-se com a pergunta: como organizar uma imagem para que outra pessoa consiga aprender algo com ela?</div></details></div>
+        <div class="act" style="--c:var(--gold)"><h4>Oficina MusEduca de Leitura, Escrita e Contação de Histórias</h4><p>Textos que remetem à educação antirracista.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Uma das obras indicadas é <i>Marrom e Amarelo</i>, do escritor gaúcho Paulo Scott.</div></details></div>
+        <div class="act" style="--c:var(--navy)"><h4>Cartografias do Parque Redenção: aprendendo com o território</h4><p>Encontro com representantes locais.</p>
+          <details class="plus"><summary>Detalhe</summary><div class="body">Com representantes como o Coletivo Preserva Redenção, com foco em questões locais. Exemplo: a fauna, a flora e a conservação do parque.</div></details></div>
+      </div>
+    </div>
+
+    <!-- slide 11 -->
+    <div class="block">
+      <div class="block-title"><h3>Conexões com o Passaporte para o Futuro</h3><span class="tag">aprofundar a experiência nos temas da exposição permanente</span><span class="rule"></span><button class="toggle-all" data-scope="pass">abrir tudo +</button></div>
+      <div class="grid g4" data-group="pass">
+        <div class="dcard"><div class="meta" style="color:var(--teal);font-size:22px;font-family:var(--head);font-weight:800">1</div><h4>Recuperar uma questão da visita</h4>
+          <details class="plus"><summary>Como</summary><div class="body">O educador identifica uma descoberta, interpretação ou pergunta desenvolvida pelo grupo. Essa referência orienta a continuidade e evita que a apresentação do Passaporte seja desconectada da experiência presencial.</div></details></div>
+        <div class="dcard"><div class="meta" style="color:var(--teal);font-size:22px;font-family:var(--head);font-weight:800">2</div><h4>Selecionar conteúdo correspondente</h4>
+          <details class="plus"><summary>Como</summary><div class="body">A equipe identifica no Passaporte um assunto que aprofunde a questão, apresente uma informação complementar ou permita uma relação com a concepção curatorial, considerando a pertinência ao público.</div></details></div>
+        <div class="dcard"><div class="meta" style="color:var(--teal);font-size:22px;font-family:var(--head);font-weight:800">3</div><h4>Explicitar a relação educativa</h4>
+          <details class="plus"><summary>Como</summary><div class="body">O educador apresenta o conteúdo e explica o que ele acrescenta à investigação, conectando a referência histórica, o problema contemporâneo e as questões dos futuros da educação.</div></details></div>
+        <div class="dcard"><div class="meta" style="color:var(--teal);font-size:22px;font-family:var(--head);font-weight:800">4</div><h4>Orientar o acesso e a continuidade</h4>
+          <details class="plus"><summary>Como</summary><div class="body">A equipe identifica o conteúdo pelo título usado no Passaporte, indica sua localização e o procedimento de acesso. O visitante sai sabendo reconhecer o material e retomar a consulta de forma autônoma.</div></details></div>
+      </div>
+    </div>
+
+    <!-- DESTAQUE VISUAL: o educativo no espaço -->
     <div class="block">
       <div class="block-title"><h3>O educativo no espaço</h3><span class="tag">clique nos números</span><span class="rule"></span></div>
       <div class="plan-wrap">
@@ -481,189 +611,72 @@ footer p{max-width:90ch;margin:0 0 8px}
       </div>
       <p class="note" style="color:#8FA3C3">Imagens conceituais do projeto expográfico; o resultado final pode variar conforme a execução da obra.</p>
     </div>
-
-    <!-- CONCEPÇÃO -->
-    <div class="block">
-      <div class="block-title"><h3>Concepção pedagógica</h3><span class="tag">Paulo Freire</span><span class="rule"></span><button class="toggle-all" data-scope="concep">abrir tudo +</button></div>
-      <div class="grid g4" data-group="concep">
-        <div class="dcard bar" style="--c:var(--gold)">
-          <h4>Leitura do mundo</h4>
-          <p>Os repertórios dos visitantes entram em diálogo com os conteúdos históricos, os objetos e as questões da exposição.</p>
-          <details class="plus"><summary>Saiba mais</summary><div class="body"><p>Base em Freire: diálogo, experiência, conhecimento e transformação social. A mediação parte do que o visitante reconhece, observa e questiona, e não da confirmação de uma narrativa pronta. Passado, presente e futuro se articulam em cada visita.</p></div></details>
-        </div>
-        <div class="dcard bar" style="--c:var(--teal)">
-          <h4>Memória escolar</h4>
-          <p>Lembranças de estudantes, professores e trabalhadores acrescentam perspectivas sobre ensino, brincadeiras e relações.</p>
-          <details class="plus"><summary>Saiba mais</summary><div class="body"><p>A mediação acolhe memórias positivas e difíceis, inclusive experiências de exclusão ou interrupção da escolarização, sem exigir que ninguém compartilhe vivências pessoais.</p></div></details>
-        </div>
-        <div class="dcard bar" style="--c:#E79BE3">
-          <h4>Acessibilidade atitudinal</h4>
-          <p>Prevenir comportamentos que prejudicam a participação das pessoas com deficiência em igualdade de condições.</p>
-          <details class="plus"><summary>Saiba mais</summary><div class="body"><p>Presente desde o primeiro contato: respeito à autonomia, nenhum pressuposto sobre capacidades, diversidade de formas de comunicação. Tem protocolo próprio (Anexo I) e dois encontros dedicados na formação.</p></div></details>
-        </div>
-        <div class="dcard bar" style="--c:var(--gold)">
-          <h4>Práticas educativas</h4>
-          <p>Observação, investigação, brincadeira, experimentação, criação e compartilhamento de experiências.</p>
-          <details class="plus"><summary>Saiba mais</summary><div class="body"><p>Os percursos são "roteiros de intenção": definem objetivos e conteúdos, mas preservam a flexibilidade da mediação dialógica, a partir das perguntas do grupo.</p></div></details>
-        </div>
-      </div>
-      <div style="margin-top:16px" class="grid g4">
-        <div class="dcard"><div class="meta">REFERÊNCIA TEMÁTICA</div><h4>Leitura do Mundo, Leitura da Sala de Aula</h4><p>Investigação da exposição e das relações entre patrimônio, conhecimento e experiência.</p></div>
-        <div class="dcard"><div class="meta">REFERÊNCIA TEMÁTICA</div><h4>Vozes e Silêncios da História</h4><p>Quem aparece e quem falta nos documentos e testemunhos, e como a memória institucional é construída.</p></div>
-        <div class="dcard"><div class="meta">REFERÊNCIA TEMÁTICA</div><h4>Ciência, Vida e Sociedade</h4><p>Tecnologias, linguagens e produção de conhecimento nas questões contemporâneas da educação.</p></div>
-        <div class="dcard"><div class="meta">REFERÊNCIA TEMÁTICA</div><h4>Arte e Resistência</h4><p>Expressão, criação e participação cultural, com destaque para as produções estudantis.</p></div>
-      </div>
-    </div>
-
-    <!-- PÚBLICOS E VISITAS -->
-    <div class="block">
-      <div class="block-title"><h3>Públicos e visitas mediadas</h3><span class="rule"></span></div>
-      <div class="grid g4">
-        <div class="dcard"><div class="meta">PÚBLICO</div><h4>Visitantes espontâneos</h4><p>Tornar o museu reconhecível, informar o funcionamento e despertar interesse.</p></div>
-        <div class="dcard"><div class="meta">PÚBLICO</div><h4>Professores e escolas</h4><p>Usos pedagógicos da exposição e como agendar.</p></div>
-        <div class="dcard"><div class="meta">PÚBLICO</div><h4>Ex-alunos e antigos docentes</h4><p>Memória escolar e encontros entre gerações.</p></div>
-        <div class="dcard"><div class="meta">PÚBLICO</div><h4>Parque e vizinhança</h4><p>Relação com o território e participação em atividades.</p></div>
-      </div>
-      <div class="grid g2" style="margin-top:16px">
-        <div class="dcard bar" style="--c:var(--gold)">
-          <div class="meta">PERCURSO PRINCIPAL · 40 MIN · ATÉ 20 PESSOAS</div>
-          <h4>Leitura do Mundo, Leitura da Sala de Aula</h4>
-          <p>Adolescentes, adultos e grupos escolares. Investiga como objetos, imagens e narrativas comunicam diferentes concepções de educação.</p>
-          <details class="plus"><summary>Os três núcleos da visita</summary><div class="body"><ul><li>A escola como espaço material e social</li><li>A escola como experiência vivida, documentada e lembrada</li><li>A escola como lugar de produção e circulação de conhecimentos</li></ul><p style="margin-top:8px">Nos grupos agendados, a equipe levanta antes o número de participantes, faixa etária, responsável e condições de participação (Anexo H).</p></div></details>
-        </div>
-        <div class="dcard bar" style="--c:var(--teal)">
-          <div class="meta">PERCURSO INFANTIL · 25 MIN</div>
-          <h4>Crianças e famílias</h4>
-          <p>Primeira infância e anos iniciais. Aproxima as crianças da história da escola pela descoberta, observação sensível e experimentação.</p>
-          <details class="plus"><summary>Como começa</summary><div class="body"><p>Pela exploração visual da Sala de Aula: reconhecer objetos familiares e identificar diferenças em relação às escolas que as crianças conhecem, com diálogo entre gerações.</p><p><b style="color:#fff">Por faixa etária:</b> crianças → objetos e usos; adolescentes → participação e conhecimento; adultos → memória pessoal e transformações da educação.</p></div></details>
-        </div>
-      </div>
-    </div>
-
-    <!-- ATIVIDADES -->
-    <div class="block">
-      <div class="block-title"><h3>Atividades educativas</h3><span class="tag">repertório, sem grade diária obrigatória</span><span class="rule"></span><button class="toggle-all" data-scope="acts">abrir tudo +</button></div>
-      <div class="acts" data-group="acts">
-        <div class="act" style="--c:var(--mag)"><h4>Vozes e Silêncios da História</h4><div class="meta">40–50 min · até 20</div><p>Oficina de narrativa a partir de três fontes: duas fotos e um texto.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Exercita a leitura crítica de fontes: quem foi registrado, quem ficou de fora e por quê.</div></details></div>
-        <div class="act" style="--c:var(--teal)"><h4>Hora do Recreio</h4><div class="meta">45–50 min · até 20</div><p>Seis brincadeiras tradicionais: cinco-marias, elástico, bola de gude, roda, bambolê e tangram.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Atividades independentes e complementares. O Tangram remete à área Alquimia da exposição permanente: conhecimentos combinados levam a descobertas.</div></details></div>
-        <div class="act" style="--c:var(--gold)"><h4>O que faz de uma tecnologia, Tecnologia?</h4><div class="meta">90 min · até 20 · a partir de 8 anos</div><p>Cartões-problema sobre as operações da erva-mate: coleta, sapeco, secagem e cancheamento.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Inclui desafios com ferramentas simples e entrelaçamento com referências da cestaria Kaingang e da produção quilombola. Tecnologia é conhecimento, não só equipamento.</div></details></div>
-        <div class="act" style="--c:var(--navy)"><h4>Cápsula dos Amanhãs</h4><div class="meta">Letramentos para os Amanhãs</div><p>Oficina coletiva: uma escola fictícia em 2026, um problema inesperado, futuros prováveis e desejáveis.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Usa o letramento de futuros para questionar o que parece inevitável. É a atividade mais conectada ao Passaporte para o Futuro.</div></details></div>
-        <div class="act" style="--c:var(--mag)"><h4>Imagens que ensinam: quadros parietais</h4><div class="meta">75 min · até 16</div><p>Como organizar uma imagem para que outra pessoa aprenda algo com ela?</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Os participantes produzem seus próprios quadros parietais, recurso didático clássico das salas de aula.</div></details></div>
-        <div class="act" style="--c:var(--teal)"><h4>Oficina de Leitura, Escrita e Contação</h4><div class="meta">75 min · até 15</div><p>Textos ligados à educação antirracista, como <i>Marrom e Amarelo</i>, de Paulo Scott.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Leitura compartilhada, escrita criativa, revisão entre pares e roda de compartilhamento.</div></details></div>
-        <div class="act" style="--c:var(--gold)"><h4>Cartografias do Parque Redenção</h4><div class="meta">60 min · até 20 · a partir de 7 anos</div><p>Encontro com representantes locais, como o Coletivo Preserva Redenção: fauna, flora e conservação.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">"O território entra no museu": conhecimentos locais circulam e voltam como devolutiva dos participantes.</div></details></div>
-        <div class="act" style="--c:var(--navy)"><h4>Passa o Bilhete</h4><div class="meta">45–60 min · 6 atividades</div><p>Pequenas conversas, grandes histórias: o bilhete faz circular perguntas entre gerações.</p>
-          <details class="plus"><summary>Detalhe</summary><div class="body">Parte de objetos, fotografias, testemunhos e espaços do Instituto para aproximar estudantes atuais e antigos integrantes da comunidade escolar.</div></details></div>
-      </div>
-    </div>
-
-    <!-- PASSAPORTE -->
-    <div class="block">
-      <div class="block-title"><h3>Conexão com o Passaporte para o Futuro</h3><span class="tag">no encerramento de cada visita</span><span class="rule"></span></div>
-      <div class="flow">
-        <div class="step"><div class="n">1</div><h4>Recuperar uma questão da visita</h4><p>Uma descoberta, interpretação ou pergunta do grupo orienta a continuidade.</p></div>
-        <div class="step"><div class="n">2</div><h4>Selecionar o conteúdo</h4><p>No Passaporte, um assunto que aprofunde a questão ou dialogue com a curadoria.</p></div>
-        <div class="step"><div class="n">3</div><h4>Explicitar a relação</h4><p>Ligar a referência histórica ao problema contemporâneo e aos futuros da educação.</p></div>
-        <div class="step"><div class="n">4</div><h4>Orientar o acesso</h4><p>O visitante sai sabendo onde está o conteúdo e como retomá-lo sozinho.</p></div>
-      </div>
-      <details class="plus"><summary>O que muda em relação à exposição permanente</summary><div class="body">Na exposição permanente, o Passaporte usa pulseiras RFID e resultados personalizados. Esse dispositivo não é requisito da entrega intermediária: aqui, a ativação é uma intervenção breve do educador, com a tecnologia desenvolvida pela SuperUber (Passaporte Virtual/WebApp).</div></details>
-    </div>
-
-    <!-- FORMAÇÃO -->
-    <div class="block">
-      <div class="block-title"><h3>Formação da equipe</h3><span class="tag">36 h · 9 encontros de 4 h</span><span class="rule"></span></div>
-      <div class="tl">
-        <div class="d"><b>24/11</b><span>Contexto e história do Instituto</span></div>
-        <div class="d"><b>25/11</b><span>Leitura dos componentes</span></div>
-        <div class="d"><b>26/11</b><span>Metodologias de mediação</span></div>
-        <div class="d"><b>27/11</b><span>Prática supervisionada I</span></div>
-        <div class="d"><b>30/11</b><span>Acessibilidade atitudinal</span></div>
-        <div class="d"><b>01/12</b><span>Acolhimento aplicado</span></div>
-        <div class="d"><b>02/12</b><span>Prática supervisionada II</span></div>
-        <div class="d test"><b>03/12</b><span>Evento-teste com público</span></div>
-        <div class="d"><b>04/12</b><span>Avaliação e ajustes</span></div>
-        <div class="d open"><b>08/12</b><span>Abertura</span></div>
-      </div>
-      <details class="plus"><summary>Quem participa e o que se espera ao final</summary><div class="body"><p>Formação integral para professora residente, coordenação pedagógica, assistente de operação e educadores bolsistas; orientações específicas para segurança/brigadista e limpeza (perfis da Nota Técnica da OEI).</p><p>Cada educador conduz ao menos uma visita completa supervisionada. O treinamento presencial pelo IDG é previsão complementar ao Produto 19 e depende de formalização institucional.</p></div></details>
-    </div>
-
-    <!-- MATERIAIS E AVALIAÇÃO -->
-    <div class="block">
-      <div class="block-title"><h3>Materiais e avaliação</h3><span class="rule"></span></div>
-      <div class="grid g2">
-        <div class="dcard">
-          <div class="meta">O QUE O PRODUTO 19 ENTREGA</div>
-          <h4>Instrumentos prontos para a equipe e as escolas</h4>
-          <div class="chips" style="margin-top:10px">
-            <span class="chip">Caderno de Educação Museal</span><span class="chip">Caderno de Atividades</span><span class="chip m">Cartilha do Professor (BNCC e RCG)</span><span class="chip">Roteiros de visita</span><span class="chip g">Plano de formação</span><span class="chip m">Estratégia de mobilização</span><span class="chip g">Protocolo de acessibilidade</span>
-          </div>
-          <details class="plus"><summary>Entrega e impressão</summary><div class="body">O IDG entrega os materiais em formato digital; a OEI cuida da impressão e da disponibilização física.</div></details>
-        </div>
-        <div class="dcard">
-          <div class="meta">AVALIAÇÃO · GENERIC LEARNING OUTCOMES (GEM, 2026)</div>
-          <h4>Mais que contar visitantes</h4>
-          <div class="glo" style="margin-top:10px"><span>Conhecimento e compreensão</span><span>Habilidades</span><span>Atitudes e valores</span><span>Prazer, inspiração e criatividade</span><span>Atividade e progressão</span><span>Envolvimento sensorial</span></div>
-          <details class="plus"><summary>Instrumentos (Anexos A–K)</summary><div class="body"><ul><li>Avaliação da visita, escuta de crianças, avaliação para jovens e para escolas</li><li>Registro de barreiras, autoavaliação das atividades, consolidação mensal</li><li>Agendamento, protocolo de acessibilidade, registro diário e matriz expositiva × mediação</li></ul><p style="margin-top:8px">Formulários por QR Code; resultados consolidados para a SEDUC-RS.</p></div></details>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- ===================== 02 OPERAÇÃO ===================== -->
+<!-- ===================== 02 OPERAÇÃO · slides 12–23 ===================== -->
 <section id="operacao">
   <div class="wrap">
     <div class="chap" style="--c:var(--teal)"><span class="num">02</span><span class="lbl">Capítulo 02 · OEI / SEDUC-RS</span></div>
     <div class="sec-head">
       <h2>Estrutura educativa e operacional</h2>
-      <p class="lede">Modelo proposto para mobilização das equipes, operação progressiva e acompanhamento da experiência. Base técnica: Nota Técnica nº 170/2026/OEI-BR.</p>
+      <p class="lede">Modelo proposto para mobilização das equipes, operação progressiva e acompanhamento da experiência.</p>
+      <p class="note" style="margin-top:0">Base técnica: Nota Técnica nº 170/2026/OEI-BR, assinada em 9 de novembro de 2026.</p>
     </div>
 
+    <!-- slide 13 -->
     <div class="block" style="margin-top:0">
       <div class="block-title"><h3>Modelo de condução institucional</h3><span class="tag">responsabilidades complementares</span><span class="rule"></span></div>
       <div class="actors">
         <div class="actor" style="--c:var(--gold)"><div class="who"><i></i>IDG</div><p>Elabora o projeto educativo, roteiros, orientações, materiais e plano de treinamento.</p></div>
-        <div class="actor" style="--c:var(--teal)"><div class="who"><i></i>OEI</div><p>Mobiliza e acompanha as equipes; coordena agendamentos e a operação educativa.</p></div>
+        <div class="actor" style="--c:var(--teal)"><div class="who"><i></i>OEI</div><p>Mobiliza e acompanha as equipes; coordena agendamentos e operação educativa.</p></div>
         <div class="actor" style="--c:var(--navy)"><div class="who"><i></i>SEDUC-RS</div><p>Valida premissas e pactua interfaces institucionais com o Instituto de Educação.</p></div>
         <div class="actor" style="--c:var(--mag)"><div class="who"><i></i>SuperUber</div><p>Desenvolve, integra e dá suporte tecnológico ao Passaporte Virtual/WebApp.</p></div>
       </div>
       <div class="banner">A professora residente e a coordenação pedagógica conectam as diretrizes do IDG à prática educativa.</div>
+      <p class="note">Treinamento presencial do IDG: previsão complementar ao Produto 19, dependente de formalização institucional.</p>
     </div>
 
+    <!-- slide 14 -->
     <div class="block">
-      <div class="block-title"><h3>Equipe prevista: 9 a 12 profissionais</h3><span class="rule"></span><button class="toggle-all" data-scope="team">abrir tudo +</button></div>
-      <div class="team" data-group="team">
+      <div class="block-title"><h3>Equipe prevista: 9 a 12 profissionais</h3><span class="tag">equipe educativa vinculada à OEI e três postos terceirizados</span><span class="rule"></span></div>
+      <div class="team">
         <div class="card">
-          <div class="big">06–09 · Equipe educativa (OEI)</div>
-          <div class="role"><b>01</b>Professora residente</div>
-          <div class="role"><b>01</b>Coordenação pedagógica / educador(a) de projeto</div>
-          <div class="role"><b>01</b>Assistente de operação e agendamento</div>
-          <div class="role"><b>03–06</b>Educadores bolsistas (30 h/semana)</div>
-          <details class="plus"><summary>Papéis na pré-operação</summary><div class="body"><ul>
-            <li><b>Professora residente:</b> articulação com escolas, universidades e museus; formação continuada; pesquisa e sistematização.</li>
-            <li><b>Coordenação pedagógica:</b> escalas e roteiros; orientação dos educadores; mediação, formação e registros.</li>
-            <li><b>Assistência de operação:</b> solicitações e confirmações de visitas; agenda, indicadores e apoio administrativo.</li>
-            <li><b>Educadores bolsistas:</b> visitas, oficinas e atividades; acolhimento; escuta dos públicos; avaliação e registros.</li>
-          </ul></div></details>
+          <div class="big">06–09 · Equipe educativa</div>
+          <div class="twrap" style="border:none"><table class="t team-t">
+            <thead><tr><th>Qtd.</th><th>Função</th><th>Carga horária semanal</th><th>Remuneração mensal</th></tr></thead>
+            <tbody>
+              <tr><td>01</td><td>Professora residente</td><td>Até 20 h</td><td class="money">R$ 3.100,00</td></tr>
+              <tr><td>01</td><td>Coordenação pedagógica</td><td>Até 40 h</td><td class="money">R$ 5.000,00</td></tr>
+              <tr><td>01</td><td>Assistente de operação e agendamento</td><td>Até 40 h</td><td class="money">R$ 3.000,00</td></tr>
+              <tr><td>03–06</td><td>Educadores bolsistas</td><td>Até 30 h por educador</td><td class="money">R$ 2.800,00 <small>por educador</small></td></tr>
+            </tbody></table></div>
         </div>
         <div class="card t2">
           <div class="big">03 · Apoio terceirizado</div>
           <div class="role"><b>01</b>Segurança brigadista</div>
           <div class="role"><b>02</b>Profissionais de limpeza</div>
-          <p style="font-size:13px;color:var(--muted);margin-top:12px">Sem postos terceirizados adicionais de atendimento: os educadores também fazem o acolhimento, a recepção e a orientação de entrada.</p>
+          <p style="font-size:13px;color:var(--muted);margin-top:12px">Sem postos terceirizados adicionais de atendimento.</p>
         </div>
       </div>
-      <p class="note">Quantitativos sujeitos à validação. Atuação sob acompanhamento institucional da OEI e com base nas orientações pedagógicas do Produto 19.</p>
+      <p class="note">Os educadores também realizam acolhimento pedagógico, recepção inicial e orientação de entrada. Quantitativos sujeitos à validação.</p>
     </div>
 
+    <!-- slide 15 -->
     <div class="block">
-      <div class="block-title"><h3>Dimensionamento da mediação</h3><span class="tag">hipótese de maior demanda: 3 posições × 7 h × 5 dias = 105 h/semana</span><span class="rule"></span></div>
+      <div class="block-title"><h3>Papéis da equipe educativa na pré-operação</h3><span class="rule"></span></div>
+      <div class="grid g4">
+        <div class="card accent c-mag"><h4>Professora residente</h4><p>Articulação com escolas, universidades e museus; formação continuada; pesquisa e sistematização.</p></div>
+        <div class="card accent c-teal"><h4>Coordenação pedagógica</h4><p>Organização de escalas e roteiros; orientação dos educadores; mediação, formação e registros.</p></div>
+        <div class="card accent c-gold"><h4>Assistência de operação</h4><p>Solicitações e confirmações de visitas; agenda, indicadores e apoio administrativo.</p></div>
+        <div class="card accent c-navy"><h4>Educadores bolsistas</h4><p>Visitas, oficinas e atividades; acolhimento; escuta dos públicos; avaliação e registros.</p></div>
+      </div>
+      <p class="note">A atuação da equipe se dá sob acompanhamento institucional da OEI e com base nas orientações pedagógicas do Produto 19.</p>
+    </div>
+
+    <!-- slide 16 -->
+    <div class="block">
+      <div class="block-title"><h3>Dimensionamento da mediação educativa</h3><span class="tag">hipótese de maior demanda: 3 posições simultâneas × 7 h/dia × 5 dias = 105 horas-pessoa/semana</span><span class="rule"></span></div>
       <div class="twrap"><table class="t">
         <thead><tr><th>Educadores</th><th>Horas brutas/semana</th><th>Saldo vs. 105 h</th><th>Leitura operacional</th></tr></thead>
         <tbody>
@@ -675,61 +688,67 @@ footer p{max-width:90ch;margin:0 0 8px}
       <div class="banner gold">Decisão final: compatibilizar capacidade de atendimento, calendário, atividades internas e resultados dos testes.</div>
     </div>
 
+    <!-- slide 17 -->
     <div class="block">
       <div class="block-title"><h3>Premissas de atendimento e visitação</h3><span class="rule"></span></div>
       <div class="kpis">
         <div class="kpi" style="--c:var(--mag)"><div class="v">60 min</div><div class="k">Duração aproximada de cada visita mediada</div></div>
         <div class="kpi" style="--c:var(--teal)"><div class="v">20</div><div class="k">Visitantes por grupo de referência, sujeito à capacidade do espaço</div></div>
-        <div class="kpi" style="--c:var(--gold)"><div class="v">até 6</div><div class="k">Janelas de visitação por dia, conforme equipes e percursos</div></div>
+        <div class="kpi" style="--c:var(--gold)"><div class="v">Até 6</div><div class="k">Janelas de visitação por dia, conforme equipes e percursos</div></div>
         <div class="kpi" style="--c:var(--navy)"><div class="v">2 perfis</div><div class="k">Grupos escolares agendados e visitantes espontâneos</div></div>
       </div>
-      <p class="note">Parâmetros preliminares; horários, janelas e capacidade a validar com o Instituto de Educação. As jornadas reservam tempo para formação, preparação, reuniões, pausas e registro.</p>
+      <div class="banner">Jornadas devem reservar períodos para formação, preparação, reuniões, pausas e registro dos aprendizados.</div>
+      <p class="note">São parâmetros preliminares; horários, quantidade de janelas e capacidade de ocupação deverão ser validados com o Instituto de Educação.</p>
     </div>
 
+    <!-- slide 18 -->
     <div class="block">
       <div class="block-title"><h3>Abertura progressiva: calendário proposto</h3><span class="rule"></span></div>
       <div class="cal">
         <div class="row" style="--c:var(--mag)"><div class="p">09–17 dez 2026</div><div class="d">Conforme testes</div><div class="x">Público do Instituto de Educação; percursos, mediação e fluxos</div></div>
         <div class="row" style="--c:var(--mag)"><div class="p">19–23 dez 2026</div><div class="d">Conforme programação</div><div class="x">Possível ampliação à UFRGS e a outros públicos externos</div></div>
-        <div class="row" style="--c:var(--gold)"><div class="p">jan–14 fev 2027</div><div class="d">Quinta a sábado</div><div class="x">Férias escolares: espontâneos e grupos agendados; horários a definir</div></div>
+        <div class="row" style="--c:var(--gold)"><div class="p">Jan–14 fev 2027</div><div class="d">Quinta a sábado</div><div class="x">Férias escolares: espontâneos e grupos agendados; horários a definir</div></div>
         <div class="row" style="--c:var(--teal)"><div class="p">15 fev–15 mar 2027</div><div class="d">Terça a sábado · 9h–12h / 13h–17h</div><div class="x">Retomada de escolas agendadas e público espontâneo</div></div>
-        <div class="row" style="--c:var(--navy)"><div class="p">16 mar–30 abr 2027</div><div class="d">Reavaliação</div><div class="x">Continuidade com ajustes conforme demanda e indicadores</div></div>
+        <div class="row" style="--c:var(--navy)"><div class="p">16 mar–30 abr 2027</div><div class="d">Reavaliação</div><div class="x">Continuidade com ajustes de acordo com a demanda e indicadores</div></div>
       </div>
       <p class="note">08/12: inauguração oficial confirmada. Demais datas, dias e horários são referências de planejamento sujeitas à pactuação.</p>
     </div>
 
+    <!-- slide 19 -->
     <div class="block">
-      <div class="block-title"><h3>Orçamento de referência da pré-operação</h3><span class="rule"></span></div>
+      <div class="block-title"><h3>Orçamento de referência da pré-operação</h3><span class="tag">preparação, operação e sistematização previstos na Nota Técnica</span><span class="rule"></span></div>
       <div class="budget">
         <div class="total"><div class="k">Total estimado</div><div class="v">R$ 211.200 a R$ 253.200</div></div>
         <div class="card">
           <div class="stack"><span style="width:58%;background:var(--mag)"></span><span style="width:38%;background:var(--teal)"></span><span style="width:4%;background:var(--gold)"></span></div>
           <div class="grid g3" style="gap:12px">
-            <div><h4 style="font-size:14px"><span style="color:var(--mag)">■</span> Equipe educativa</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 113.700 a R$ 155.700</b><br>6–9 profissionais; referências de 5 e 7 meses</p></div>
-            <div><h4 style="font-size:14px"><span style="color:var(--teal)">■</span> Apoio terceirizado</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 87.500</b><br>1 brigadista + 2 de limpeza por 5 meses</p></div>
-            <div><h4 style="font-size:14px"><span style="color:var(--gold)">■</span> Materiais didáticos</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 10.000</b><br>R$ 2.000/mês por 5 meses</p></div>
+            <div><h4 style="font-size:14px"><span style="color:var(--mag)">■</span> Equipe educativa</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 113.700 a R$ 155.700</b><br>6–9 profissionais; referências de 5 e 7 meses.</p></div>
+            <div><h4 style="font-size:14px"><span style="color:var(--teal)">■</span> Apoio terceirizado</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 87.500</b><br>1 segurança brigadista + 2 profissionais de limpeza por 5 meses.</p></div>
+            <div><h4 style="font-size:14px"><span style="color:var(--gold)">■</span> Materiais didáticos</h4><p style="font-size:13px;color:var(--muted);margin:0"><b style="color:var(--ink)">R$ 10.000</b><br>R$ 2.000 mensais por 5 meses para atividades e reposição.</p></div>
           </div>
         </div>
       </div>
       <p class="note">Os valores não comprovam saldo disponível no ACTI e dependem de confirmação administrativa, jurídica, orçamentária e de cotações.</p>
     </div>
 
+    <!-- slide 20 -->
     <div class="block">
       <div class="block-title"><h3>Matriz de responsabilidades: interfaces críticas</h3><span class="rule"></span></div>
       <div class="twrap"><table class="t">
         <thead><tr><th>Frente</th><th>Concepção / apoio técnico</th><th>Implementação e operação</th></tr></thead>
         <tbody>
           <tr><td>Projeto educativo</td><td>IDG: plano, roteiros e materiais</td><td>OEI, coordenação pedagógica e educadores: aplicação</td></tr>
-          <tr><td>Formação presencial</td><td>IDG: plano; execução presencial complementar prevista</td><td>OEI: mobilização; coordenação e professora residente: acompanhamento</td></tr>
+          <tr><td>Formação e treinamento de equipes</td><td>IDG: plano; OEI: execução presencial complementar</td><td>OEI: mobilização; coordenação e professora residente: acompanhamento</td></tr>
           <tr><td>Passaporte Virtual / WebApp</td><td>IDG: orientação pedagógica; SuperUber: tecnologia</td><td>OEI, coordenação e educadores: utilização e testes</td></tr>
           <tr><td>Materiais educativos</td><td>IDG: entrega digital</td><td>OEI: impressão e disponibilização dos materiais físicos</td></tr>
           <tr><td>Agenda e mediação</td><td>IDG: roteiros e orientações</td><td>OEI: equipes, reservas, recepção, atividades e registros</td></tr>
         </tbody></table></div>
-      <p class="note">A execução presencial do treinamento pelo IDG depende de formalização do arranjo complementar. A SEDUC-RS participa das validações institucionais.</p>
+      <p class="note">A execução presencial do treinamento pelo IDG depende de formalização do arranjo complementar. SEDUC-RS participa das validações institucionais.</p>
     </div>
 
+    <!-- slide 21 -->
     <div class="block">
-      <div class="block-title"><h3>Marcos de implementação e operação</h3><span class="rule"></span></div>
+      <div class="block-title"><h3>Marcos de implementação e operação</h3><span class="tag">apenas a inauguração de 8 de dezembro está confirmada</span><span class="rule"></span></div>
       <div class="miles">
         <div class="mile" style="--c:var(--mag)"><div class="dot"></div><div class="when">11 NOV</div><h4>Produto 19</h4><p>Entrega técnica do IDG</p></div>
         <div class="mile" style="--c:var(--teal)"><div class="dot"></div><div class="when">12–20 NOV</div><h4>Análise</h4><p>Compatibilização das interfaces</p></div>
@@ -739,10 +758,12 @@ footer p{max-width:90ch;margin:0 0 8px}
         <div class="mile" style="--c:var(--teal)"><div class="dot"></div><div class="when">DEZ–ABR</div><h4>Operação</h4><p>Visitas, oficinas e avaliação</p></div>
         <div class="mile" style="--c:var(--gold)"><div class="dot"></div><div class="when">MAI 2027</div><h4>Síntese</h4><p>Relatório e recomendações</p></div>
       </div>
+      <p class="note">Após 08/12: testes em dezembro, operação progressiva até abril e consolidação das aprendizagens em maio de 2027.</p>
     </div>
 
+    <!-- slide 22 -->
     <div class="block">
-      <div class="block-title"><h3>Acompanhamento da operação e aprendizagem</h3><span class="tag">OEI coordena os registros com os instrumentos do Produto 19</span><span class="rule"></span></div>
+      <div class="block-title"><h3>Acompanhamento da operação e aprendizagem</h3><span class="tag">observação, registro e aperfeiçoamento das práticas educativas</span><span class="rule"></span></div>
       <div class="grid g3">
         <div class="card accent c-mag"><h4>Públicos</h4><p>Total de visitantes e perfil de atendimento</p></div>
         <div class="card accent c-teal"><h4>Escolas</h4><p>Grupos agendados e visitantes espontâneos</p></div>
@@ -751,84 +772,108 @@ footer p{max-width:90ch;margin:0 0 8px}
         <div class="card accent c-mag"><h4>Atividades</h4><p>Participação em visitas e ações educativas</p></div>
         <div class="card accent c-teal"><h4>Aprendizados</h4><p>Ajustes metodológicos e recomendações</p></div>
       </div>
+      <p class="note">OEI coordena os registros; instrumentos do Produto 19; síntese e recomendações previstas para maio de 2027.</p>
     </div>
 
+    <!-- slide 23 -->
     <div class="block">
       <div class="block-title"><h3>Premissas para validação com a SEDUC-RS</h3><span class="rule"></span></div>
       <div class="valid">
-        <div class="card" style="--c:var(--mag)"><div class="n">01</div><h4>Equipe e contratação</h4><p>Composição, quantitativo de educadores, jornadas e modalidades de contratação.</p></div>
-        <div class="card" style="--c:var(--teal)"><div class="n">02</div><h4>Orçamento e ACTI</h4><p>Rubricas, disponibilidade de recursos, cotações e condições administrativas.</p></div>
-        <div class="card" style="--c:var(--gold)"><div class="n">03</div><h4>Funcionamento e acesso</h4><p>Calendário, capacidade, agenda, circulação, segurança e acessibilidade.</p></div>
-        <div class="card" style="--c:var(--navy)"><div class="n">04</div><h4>Interfaces do projeto</h4><p>Implantação do Produto 19, formação presencial, Passaporte Virtual e materiais.</p></div>
+        <div class="card" style="--c:var(--mag)"><div class="n">01</div><h4>Equipe e contratação</h4><p>Validar composição, quantitativo de educadores, jornadas e modalidades de contratação.</p></div>
+        <div class="card" style="--c:var(--teal)"><div class="n">02</div><h4>Orçamento e ACTI</h4><p>Confirmar rubricas, disponibilidade de recursos, cotações e condições administrativas.</p></div>
+        <div class="card" style="--c:var(--gold)"><div class="n">03</div><h4>Funcionamento e acesso</h4><p>Pactuar calendário, capacidade, agenda, circulação, segurança e acessibilidade.</p></div>
+        <div class="card" style="--c:var(--navy)"><div class="n">04</div><h4>Interfaces do projeto</h4><p>Confirmar implantação do Produto 19, formação presencial, Passaporte Virtual e materiais.</p></div>
       </div>
+      <p class="note">A Nota Técnica apresenta propostas e referências de planejamento, condicionadas às validações institucionais pertinentes.</p>
     </div>
   </div>
 </section>
 
-<!-- ===================== 03 COMITÊ ===================== -->
+<!-- ===================== 03 COMITÊ · slides 24–30 ===================== -->
 <section id="comite">
   <div class="wrap">
     <div class="chap" style="--c:var(--mag)"><span class="num">03</span><span class="lbl">Capítulo 03 · Comitê Jovem</span></div>
     <div class="sec-head">
       <h2>Comitê Jovem do MusEduca</h2>
-      <p class="lede">Estrutura mínima e cronograma de constituição participativa: anúncio público em 8 de dezembro de 2026, seguido de um percurso de escuta, mobilização e cocriação ao longo da pré-operação.</p>
+      <p class="lede">Estrutura mínima e cronograma de constituição participativa. Proposta de anúncio público em 8 de dezembro de 2026, durante a inauguração da experiência de pré-inauguração do museu, seguida de um percurso de escuta, mobilização e cocriação ao longo da pré-operação.</p>
     </div>
-    <p class="quote">Em dezembro, o Comitê Jovem pode ser anunciado como uma inovação na governança participativa do MusEduca. Durante os cinco meses de pré-operação, SEDUC-RS e OEI conduziriam sua implementação com escutas, oficinas de cocriação e Futures Literacy Labs.</p>
 
+    <!-- slide 25 -->
+    <div class="block" style="margin-top:0">
+      <div class="block-title"><h3>A proposta em síntese</h3><span class="rule"></span></div>
+      <p class="quote">Em dezembro, o Comitê Jovem pode ser anunciado como uma inovação na governança participativa do MusEduca. Durante os cinco meses de pré-operação da mini expo, SEDUC-RS e OEI conduziriam sua implementação com escutas, oficinas de cocriação e Futures Literacy Labs.</p>
+      <div class="grid g3" style="margin-top:22px">
+        <div class="card accent c-mag"><h4>Anúncio público</h4><p>Lançamento institucional em 8 de dezembro de 2026, com apresentação das premissas do Comitê.</p></div>
+        <div class="card accent c-teal"><h4>Construção participativa</h4><p>Processo com os próprios estudantes para definir funcionamento, agenda inicial e prioridades.</p></div>
+        <div class="card accent c-gold"><h4>Pré-operação como laboratório</h4><p>Janeiro a maio de 2027 como ciclo de testes, escuta e consolidação do grupo piloto.</p></div>
+      </div>
+    </div>
+
+    <!-- slide 26 -->
     <div class="block">
+      <div class="block-title"><h3>Finalidade e composição inicial</h3><span class="rule"></span></div>
       <div class="grid g3">
-        <div class="card accent c-mag"><h4>Anúncio público</h4><p>Lançamento institucional em 8 de dezembro de 2026, com as premissas do Comitê.</p></div>
-        <div class="card accent c-teal"><h4>Construção participativa</h4><p>Os próprios estudantes definem funcionamento, agenda inicial e prioridades.</p></div>
-        <div class="card accent c-gold"><h4>Pré-operação como laboratório</h4><p>Janeiro a maio de 2027: testes, escuta e consolidação do grupo piloto.</p></div>
+        <div class="card"><h4>Finalidade</h4><p>Instância consultiva de participação estudantil na governança do MusEduca: um espaço contínuo de escuta e contribuição dos jovens para as experiências, a programação educativa e a relação do museu com as escolas e a juventude.</p></div>
+        <div class="card"><h4>Composição inicial proposta</h4><p>Até 10 estudantes do Ensino Médio (1º, 2º ou 3º ano), com participação do Instituto de Educação General Flores da Cunha e de outras escolas, conforme critérios a pactuar com a SEDUC-RS.</p></div>
+        <div class="card"><h4>Premissas de participação</h4><p>Diversidade de trajetórias, escolas e anos escolares, com critérios transparentes. Seleção por chamada ou edital público, a avaliar com a SEDUC-RS.</p></div>
       </div>
+      <p class="note">A duração do mandato e a periodicidade dos encontros serão definidas no processo de cocriação.</p>
     </div>
 
+    <!-- slide 27 -->
     <div class="block">
-      <div class="block-title"><h3>Finalidade, composição e método</h3><span class="rule"></span><button class="toggle-all" data-scope="comite">abrir tudo +</button></div>
-      <div class="grid g3" data-group="comite">
-        <div class="card">
-          <h4>Finalidade</h4>
-          <p>Instância consultiva de participação estudantil na governança do MusEduca: escuta e contribuição contínuas dos jovens.</p>
-          <details class="plus"><summary>Frentes de contribuição</summary><div class="body"><ul><li>Mediação e experiências expositivas</li><li>Programação educativa do museu</li><li>Passaporte Virtual e usos pedagógicos</li><li>Biblioteca Inspiradora e relação com a comunidade escolar</li></ul></div></details>
-        </div>
-        <div class="card">
-          <h4>Composição inicial</h4>
-          <p>Até 10 estudantes do 1º ao 3º ano do Ensino Médio, do Instituto de Educação General Flores da Cunha e de outras escolas.</p>
-          <details class="plus"><summary>Premissas de participação</summary><div class="body"><p>Diversidade de trajetórias, escolas e anos escolares; critérios transparentes; seleção por chamada ou edital público, a avaliar com a SEDUC-RS. Duração do mandato e periodicidade dos encontros definidas na cocriação.</p></div></details>
-        </div>
-        <div class="card">
-          <h4>Metodologia inicial</h4>
-          <p>Encontros de escuta, oficinas de cocriação e Futures Literacy Labs.</p>
-          <details class="plus"><summary>Articulação institucional</summary><div class="body"><ul><li><b>SEDUC-RS:</b> pactuação, validação, interlocução com as escolas e anúncio público.</li><li><b>OEI:</b> coordenação do processo, apoio metodológico, escuta e cocriação.</li><li><b>co.liga:</b> parceria potencial para mobilização, formação e eventual certificação.</li><li><b>IDG e outros parceiros:</b> colaboração em temas das suas frentes.</li></ul></div></details>
-        </div>
+      <div class="block-title"><h3>Frentes de contribuição e metodologia</h3><span class="rule"></span></div>
+      <div class="grid g2">
+        <div class="card accent c-gold"><h4>Frentes de contribuição</h4>
+          <ul class="lst"><li>Mediação e experiências expositivas</li><li>Programação educativa do museu</li><li>Passaporte Virtual e usos pedagógicos</li><li>Biblioteca Inspiradora e relação com a comunidade escolar</li></ul></div>
+        <div class="card accent c-teal"><h4>Metodologia inicial</h4>
+          <ul class="lst"><li>Encontros de escuta com os estudantes</li><li>Oficinas de cocriação</li><li>Atividades de Alfabetização em Futuros (Futures Literacy Labs)</li><li>Devolutivas e sistematização das contribuições</li></ul></div>
       </div>
+      <p class="note">O Comitê terá caráter consultivo e contribuirá para a construção progressiva do MusEduca.</p>
     </div>
 
+    <!-- slide 28 -->
+    <div class="block">
+      <div class="block-title"><h3>Articulação institucional</h3><span class="rule"></span></div>
+      <div class="actors">
+        <div class="actor" style="--c:var(--navy)"><div class="who"><i></i>SEDUC-RS</div><p>Pactuação institucional, validação da proposta, interlocução com as escolas e anúncio público do compromisso de criação do Comitê.</p></div>
+        <div class="actor" style="--c:var(--teal)"><div class="who"><i></i>OEI</div><p>Coordenação do processo, apoio metodológico, organização das atividades de escuta, mobilização e cocriação.</p></div>
+        <div class="actor" style="--c:var(--mag)"><div class="who"><i></i>co.liga</div><p>Parceria potencial para mobilização, atividades formativas e eventual certificação, conforme pactuação posterior.</p></div>
+        <div class="actor" style="--c:var(--gold)"><div class="who"><i></i>Outros parceiros</div><p>IDG e demais parceiros do MusEduca poderão colaborar em temas relacionados às suas frentes de atuação.</p></div>
+      </div>
+      <p class="note">A constituição do Comitê será pactuada entre SEDUC-RS e OEI. As demais colaborações dependem de definição institucional posterior.</p>
+    </div>
+
+    <!-- slide 29 -->
     <div class="block">
       <div class="block-title"><h3>Cronograma preliminar de constituição</h3><span class="rule"></span></div>
-      <div class="steps6">
-        <div class="s6 key"><div class="when">08 DEZ 2026</div><h4>Anúncio institucional</h4><p>SEDUC-RS e Governo apresentam o compromisso e a parceria com o co.liga.</p></div>
-        <div class="s6" style="--c:var(--mag)"><div class="when">JAN 2027</div><h4>Pactuação e desenho</h4><p>Responsabilidades, metodologia, critérios e mobilização.</p></div>
-        <div class="s6" style="--c:var(--teal)"><div class="when">FEV 2027</div><h4>Mobilização e escuta</h4><p>Divulgação, seleção e primeiras escutas.</p></div>
-        <div class="s6" style="--c:var(--gold)"><div class="when">MAR 2027</div><h4>Oficinas de cocriação</h4><p>Futures Literacy Labs; regras e agenda do Comitê.</p></div>
-        <div class="s6" style="--c:var(--mag)"><div class="when">ABR 2027</div><h4>Grupo piloto</h4><p>Até 10 estudantes; prioridades e agenda inicial.</p></div>
-        <div class="s6" style="--c:var(--teal)"><div class="when">MAI 2027</div><h4>Sistematização</h4><p>Avaliação participativa e recomendações.</p></div>
-      </div>
+      <p style="color:var(--muted);max-width:90ch;font-size:15px">O anúncio público inaugura o compromisso institucional. A seleção, o modelo de funcionamento e as prioridades do Comitê serão desenvolvidos com participação dos próprios estudantes.</p>
+      <div class="twrap"><table class="t">
+        <thead><tr><th>Período</th><th>Etapa</th><th>Resultado esperado</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>08 dez 2026</td><td>Anúncio institucional</td><td>SEDUC-RS e Governo do Estado apresentam o compromisso de criação do Comitê Jovem, suas premissas e a perspectiva de parceria com o co.liga.</td></tr>
+          <tr><td>Jan 2027</td><td>Pactuação e desenho inicial</td><td>Definição das responsabilidades, metodologia de escuta, critérios de participação e formato de mobilização.</td></tr>
+          <tr><td>Fev 2027</td><td>Mobilização e escuta</td><td>Divulgação, seleção dos estudantes e primeiras atividades de escuta, conforme pactuação institucional.</td></tr>
+          <tr><td>Mar 2027</td><td>Oficinas de cocriação</td><td>Oficinas e Futures Literacy Labs para elaborar propostas e cocriar as regras e a agenda do Comitê.</td></tr>
+          <tr><td>Abr 2027</td><td>Constituição do grupo piloto</td><td>Constituição do Comitê com até 10 estudantes e definição de prioridades e agenda inicial.</td></tr>
+          <tr><td>Mai 2027</td><td>Sistematização e devolutiva</td><td>Registro dos resultados do primeiro ciclo, avaliação participativa e recomendações para continuidade.</td></tr>
+        </tbody></table></div>
     </div>
 
+    <!-- slide 30 -->
     <div class="block">
       <div class="block-title"><h3>Encaminhamentos para pactuação</h3><span class="rule"></span></div>
       <div class="grid g3">
-        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--mag);font-size:22px">01</div><h4>Antes do anúncio</h4><p>Confirmar com a SEDUC-RS o formato da mensagem institucional e os interlocutores do processo participativo.</p></div>
-        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--teal);font-size:22px">02</div><h4>1º trimestre de 2027</h4><p>Definir critérios de participação, procedimento de seleção e formato de mobilização.</p></div>
-        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--gold);font-size:22px">03</div><h4>Parcerias e método</h4><p>Pactuar a colaboração do co.liga e de outros parceiros e os instrumentos de registro e devolutiva.</p></div>
+        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--mag);font-size:22px">01</div><h4>Antes do anúncio</h4><p>Confirmar com a SEDUC-RS o formato da mensagem institucional e os interlocutores responsáveis pela condução do processo participativo.</p></div>
+        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--teal);font-size:22px">02</div><h4>Primeiro trimestre de 2027</h4><p>Definir os critérios de participação, o procedimento de seleção e o formato de mobilização dos estudantes.</p></div>
+        <div class="card"><div style="font-family:var(--head);font-weight:800;color:var(--gold);font-size:22px">03</div><h4>Parcerias e apoio metodológico</h4><p>Pactuar a eventual colaboração do co.liga e de outros parceiros, bem como os instrumentos de registro e devolutiva do processo.</p></div>
       </div>
-      <p class="note">Composição, parcerias, critérios e prazos posteriores à inauguração são propostas preliminares, sujeitas à validação das instituições e à participação dos estudantes.</p>
+      <p class="note">Nota: a composição, as parcerias, os critérios de seleção e os prazos posteriores à inauguração são propostas preliminares, sujeitas à validação das instituições e à participação dos estudantes na definição do modelo.</p>
     </div>
   </div>
 </section>
 
-<!-- ===================== PACTUAÇÃO ===================== -->
+<!-- ===================== slide 31 ===================== -->
 <section id="pactuacao">
   <div class="wrap">
     <div class="sec-head">
@@ -836,18 +881,18 @@ footer p{max-width:90ch;margin:0 0 8px}
       <h2>Encaminhamentos integrados para pactuação</h2>
     </div>
     <div class="grid g3">
-      <div class="card" style="--c:var(--gold)"><h4>Projeto educativo</h4><p>Compatibilizar o Produto 19, o plano de formação presencial, o uso pedagógico do Passaporte e as condições de aplicação dos materiais.</p></div>
+      <div class="card" style="--c:var(--gold)"><h4>Projeto educativo</h4><p>Compatibilizar Produto 19, plano de formação presencial, uso pedagógico do Passaporte e condições de aplicação dos materiais.</p></div>
       <div class="card" style="--c:var(--teal)"><h4>Operação da experiência</h4><p>Validar equipes, escalas, orçamento, serviços, horários e protocolos para a abertura progressiva.</p></div>
       <div class="card" style="--c:var(--mag)"><h4>Comitê Jovem</h4><p>Pactuar a mensagem pública de 8 de dezembro e o processo participativo de constituição em 2027.</p></div>
     </div>
-    <div class="confirm"><b>08/12/2026</b> Marco confirmado. Demais parâmetros sujeitos à pactuação OEI–SEDUC-RS.</div>
+    <div class="confirm"><b>Marco confirmado: 8 de dezembro de 2026</b> · Demais parâmetros sujeitos à pactuação OEI–SEDUC-RS.</div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="logos"><img src="data:image/jpeg;base64,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AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFcl8UvD7+I/Bl9ZwDNwF3xfUV1tFAHwPcwSW1xJDOpSWNirKeoIqKvrfx58J9G8UzPdRk2V633pIxw31FcBD+z9ObjE2rqIc/eCc0AeOeGdGu9d1q1sLGIySyOM47DuTX23olium6TaWadIYwlc74F8AaP4PizYxmS6YYed+p/wrr6ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z" alt="MusEduca"><img src="data:image/jpeg;base64,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" alt="OEI"><img src="data:image/png;base64,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" alt="IDG"></div>
-    <p><b>Fontes:</b> Apresentação integrada MusEduca à SEDUC-RS (novembro/2026); Nota Técnica nº 170/2026/OEI-BR; apresentação do Comitê Jovem (novembro/2026); SuperUber, Produto 1 (28/09/2026), renders e plantas; IDG, <i>Produto 19 — Projeto Educativo da Exposição da Entrega Intermediária do MusEduca</i> (2026).</p>
+    <p><b>Fontes:</b> Apresentação integrada MusEduca à SEDUC-RS (12/11/2026); Nota Técnica nº 170/2026/OEI-BR; apresentação do Comitê Jovem (novembro/2026); SuperUber, Produto 1 (28/09/2026), renders e plantas; IDG, <i>Produto 19 — Projeto Educativo da Exposição da Entrega Intermediária do MusEduca</i> (2026).</p>
     <p>Os parâmetros de equipe, orçamento, calendário e capacidade são referências de planejamento, condicionadas às validações institucionais pertinentes.</p>
   </div>
 </footer>
@@ -858,12 +903,12 @@ const IMG = {hall:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQ
 const CAP = {hall:'Render conceitual do hall de entrada',planta:'Planta do hall, corredor e Sala de Acolhimento, com fluxo de visita',sala:'Render conceitual da Sala de Aula',diag:'Sala de Aula: adesivação, dry-wall, projeção e som',app:'Passaporte para o Futuro (WebApp)'};
 const Z = {
   1:{k:'Chegada',t:'Hall compartilhado',img:'hall',d:'Primeiro contato, num hall com a identidade visual do museu e um totem com o tour virtual e o QR code do Passaporte. A equipe apresenta o MusEduca como museu que investiga a educação, dentro de uma escola em pleno funcionamento.',u:[['Acolhimento','m'],['Pergunta inicial',''],['Totem e QR code','g']]},
-  2:{k:'Acolhimento',t:'Sala de Acolhimento e Educativo',img:'planta',d:'Sala com textos institucionais, ficha técnica e atendimento com tablets dos mediadores. Aqui o educador lança a pergunta que guia a visita e combina percurso, duração e formas de participação. A acessibilidade atitudinal começa neste momento.',u:[['Oficinas',''],['Hora do Recreio','m'],['Quadros parietais','g'],['Leitura e escrita','']]},
+  2:{k:'Acolhimento',t:'Sala de Acolhimento e Educativo',img:'planta',d:'Sala com textos institucionais, ficha técnica e atendimento com tablets dos mediadores. Aqui o educador lança a pergunta que guia a visita e combina percurso, duração e formas de participação. A acessibilidade atitudinal começa neste momento.',u:[['Oficinas',''],['Hora do Recreio','m'],['Quadros parietais','g'],['Leitura, escrita e contação','']]},
   3:{k:'Mobiliário',t:'Carteiras em dupla, com telas e som direcional',img:'sala',d:'A disposição das carteiras abre a conversa sobre espaço, corpo e aprendizagem: como a organização de uma sala favorece certas atividades e relações. Comparar com as salas de hoje é o gancho para o presente.',u:[['Leitura do Mundo',''],['Percurso infantil','m'],['O que faz uma tecnologia?','g']]},
   4:{k:'Ideias',t:'Quadro com projeções',img:'sala',d:'Quadro negro de cerca de 3,4 m que recebe projeções: enunciados sobre educação ao longo do século XX e uma animação de até 5 minutos, conduzida pela voz de uma mestra, até a sala de aula do MusEduca. A mediação discute autoria, contexto e divergências: o papel do professor, a participação dos estudantes, as linguagens usadas para ensinar.',u:[['Leitura do Mundo',''],['Cápsula dos Amanhãs','m']]},
-  5:{k:'Memória visual',t:'Mural de fotografias de turmas e telas de consulta por ano',img:'sala',d:'30 fotografias históricas de turmas do Instituto e 8 quadros parietais nas paredes. Leitura crítica das imagens: quem aparece, como foi fotografado, o que ficou fora do quadro. As telas mostram que todo acervo é fruto de escolhas de seleção e organização.',u:[['Vozes e Silêncios','m'],['Passa o Bilhete',''],['Ex-alunos','g']]},
-  6:{k:'Materialidade',t:'Objetos e pertences escolares',img:'sala',d:'Instrumentos de escrita, materiais de estudo e pertences de estudantes aproximam a história de gestos do cotidiano. Funções que permanecem reconhecíveis entre gerações despertam lembranças e perguntas.',u:[['Percurso infantil','m'],['Passa o Bilhete',''],['Hora do Recreio','g']]},
-  7:{k:'Testemunhos',t:'Relatos audiovisuais',img:'diag',d:'Depoimentos de estudantes, professores e trabalhadores do Instituto. Uma mesma escola produz memórias distintas, e o educador favorece que os participantes conversem entre si e entre gerações.',u:[['Ex-alunos e docentes','g'],['Passa o Bilhete',''],['Vozes e Silêncios','m']]},
+  5:{k:'Memória visual',t:'Mural de fotografias de turmas e telas de consulta por ano',img:'sala',d:'30 fotografias históricas de turmas do Instituto e 8 quadros parietais nas paredes. Leitura crítica das imagens: quem aparece, como foi fotografado, o que ficou fora do quadro. As telas mostram que todo acervo é fruto de escolhas de seleção e organização.',u:[['Vozes e Silêncios','m'],['Imagens que ensinam',''],['Ex-alunos e docentes','g']]},
+  6:{k:'Materialidade',t:'Objetos e pertences escolares',img:'sala',d:'Instrumentos de escrita, materiais de estudo e pertences de estudantes aproximam a história de gestos do cotidiano. Funções que permanecem reconhecíveis entre gerações despertam lembranças e perguntas.',u:[['Percurso infantil','m'],['Hora do Recreio',''],['Tangram','g']]},
+  7:{k:'Testemunhos',t:'Relatos audiovisuais',img:'diag',d:'Depoimentos de estudantes, professores e trabalhadores do Instituto. Uma mesma escola produz memórias distintas, e o educador favorece que os participantes conversem entre si e entre gerações.',u:[['Ex-alunos e docentes','g'],['Memória escolar',''],['Vozes e Silêncios','m']]},
   8:{k:'Continuidade',t:'Passaporte para o Futuro',img:'app',d:'No encerramento, o educador retoma uma questão da visita e indica no Passaporte Virtual um conteúdo que a aprofunde, conectando a Sala de Aula à exposição permanente e aos futuros da educação.',u:[['Encerramento',''],['Cápsula dos Amanhãs','m'],['WebApp SuperUber','g']]}
 };
 const zoneOf = {1:1,2:2,3:3,4:3,5:3,6:3,7:3,8:null};
